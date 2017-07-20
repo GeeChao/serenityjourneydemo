@@ -34,9 +34,7 @@ public class DemoSteps {
     }
 
     @Given("^that (.*) has an empty todo list$")
-    public void actor_has_an_empty_todo_list(String actorName) throws Throwable {
-//        givenThat(user).can(BrowseTheWeb.with(theBrowser));
-//        givenThat(user).wasAbleTo(Start.withAnEmptyTodoList());
+    public void actor_has_an_empty_todo_list(String actorName) throws Throwable {;
         theActorCalled(actorName).wasAbleTo(Start.withAnEmptyTodoList());
     }
 

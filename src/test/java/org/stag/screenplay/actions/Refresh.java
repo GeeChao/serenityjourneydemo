@@ -8,7 +8,6 @@ public class Refresh implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         BrowseTheWeb.as(actor).getDriver().manage().deleteAllCookies();
-        //BrowseTheWeb.as(actor).getDriver().navigate().refresh();
     }
 
     public static Refresh theBrowserSession() {
